@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bangCuuChuong</title>
+</head>
+<body>
+<script>
+    let tb;
+    tb ="<table border='1'>"
+    for (let i = 1; i <= 10; i++) {
+        tb = tb+ "<tr>";
+        for (let j = 1; j <=10 ; j++) {
+            tb = tb + `<td align='center'>${j}*${i} = ` + i * j + `</td>`;
+        }
+        tb = tb + "</tr>";
+    }
+    tb= tb + "</table>"
+    document.write(tb);
+</script>
+</body>
+</html>
